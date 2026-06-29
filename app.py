@@ -1,7 +1,7 @@
 import streamlit as st
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
-import tensorflow as tf
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -253,6 +253,3 @@ if uploaded_file:
             file_name=f"Report_{p_name}.pdf",
             mime="application/pdf"
         )
-
-# st.markdown("---")
-# st.caption("⚠️ AI tool for assistance only")
