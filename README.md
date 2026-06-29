@@ -74,26 +74,29 @@ through an easy-to-use **Streamlit Web Application**.
 
 The complete workflow of the project follows the pipeline below:
 
+
 ```
+
 Patient
-    │
-    ▼
+│
+▼
 Upload Knee X-ray
-    │
-    ▼
+│
+▼
 Image Preprocessing
-    │
-    ▼
+│
+▼
 Custom CNN Model
-    │
-    ▼
+│
+▼
 Prediction
-    │
-    ├────────► Confidence Score
-    │
-    ├────────► Grad-CAM Heatmap
-    │
-    └────────► PDF Report Generation
+│
+├────────► Confidence Score
+│
+├────────► Grad-CAM Heatmap
+│
+└────────► PDF Report Generation
+
 ```
 
 ---
@@ -123,7 +126,9 @@ The project uses a **Custom Convolutional Neural Network (CNN)** developed using
 
 ## Architecture
 
+
 ```
+
 Input Image (256×256×3)
 
 ↓
@@ -189,6 +194,7 @@ Dense (64)
 ↓
 
 Softmax Output
+
 ```
 
 ### Activation Function
@@ -223,8 +229,11 @@ Softmax Output
 
 ## Image Size
 
+
 ```
+
 256 × 256 × 3
+
 ```
 
 ---
@@ -301,30 +310,20 @@ The Streamlit application allows users to:
 
 # 📁 Project Structure
 
+
 ```
-OSTEOPOROSIS-DETECTION-USING-DEEP-LEARNING
+
+OSTEOPOROSIS-DETECTION-USING-DEEP-LEARINING
 │
-├── FINAL DATASETS
-│   ├── normal
-│   └── osteoporosis
-│
-├── IMP FILES
-│
-├── workflow
-│
-├── app.py
-│
-├── osteoporosis_model.h5
-│
-├── osteoporosis_2_0.ipynb
-│
-├── Report_Guest.pdf
-│
-├── How to Run.txt
-│
-├── PROJ INFO & VIVA.pdf
-│
-└── README.md
+├── .devcontainer/             # Dev container configuration environment
+├── app.py                     # Main Streamlit application source code
+├── requirements.txt           # Project dependencies pinned for stable deployment
+├── README.md                  # Project documentation
+├── osteoporosis_model.h5      # Trained TensorFlow/Keras deep learning model
+├── osteoporosis_2_0.ipynb     # Jupyter Notebook used for model training/experimentation
+├── Report_Guest - 1.pdf       # Project Report / Documentation PDF 1
+└── Report_Guest - 2.pdf       # Project Report / Documentation PDF 2
+
 ```
 
 ---
@@ -334,7 +333,9 @@ OSTEOPOROSIS-DETECTION-USING-DEEP-LEARNING
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/Osteoporosis-Detection-Using-Deep-Learning.git
+git clone [https://github.com/MohammadHassan72/osteoporosis-detection-using-deep-learining.git](https://github.com/MohammadHassan72/osteoporosis-detection-using-deep-learining.git)
+cd osteoporosis-detection-using-deep-learining
+
 ```
 
 ---
@@ -343,6 +344,7 @@ git clone https://github.com/yourusername/Osteoporosis-Detection-Using-Deep-Lear
 
 ```bash
 pip install -r requirements.txt
+
 ```
 
 ---
@@ -351,6 +353,7 @@ pip install -r requirements.txt
 
 ```bash
 streamlit run app.py
+
 ```
 
 ---
@@ -383,33 +386,34 @@ Generate PDF Report
 ↓
 
 Download Report
+
 ```
 
 ---
 
 # 🎯 Advantages
 
-- Low Cost
-- Fast Prediction
-- User Friendly
-- Explainable AI
-- Automatic Report Generation
-- Suitable for Rural Clinics
-- Reduces Diagnosis Time
-- Supports Early Detection
+* Low Cost
+* Fast Prediction
+* User Friendly
+* Explainable AI
+* Automatic Report Generation
+* Suitable for Rural Clinics
+* Reduces Diagnosis Time
+* Supports Early Detection
 
 ---
 
 # 🔮 Future Scope
 
-- Multi-Class Classification
-- DICOM Image Support
-- Cloud Deployment
-- Mobile Application
-- Hospital Integration
-- Doctor Dashboard
-- Electronic Health Record Integration
-- Multi-Disease Detection
+* Multi-Class Classification
+* DICOM Image Support
+* Cloud Deployment
+* Mobile Application
+* Hospital Integration
+* Doctor Dashboard
+* Electronic Health Record Integration
+* Multi-Disease Detection
 
 ---
 
@@ -435,15 +439,15 @@ Academic Year **2025–2026**
 
 We sincerely thank:
 
-- MMANTC, Malegaon
-- Department of Computer Engineering
-- Our Project Guide
-- TensorFlow Team
-- Streamlit
-- Kaggle
-- OpenCV Community
-- Google Colab
-- GitHub
+* MMANTC, Malegaon
+* Department of Computer Engineering
+* Our Project Guide
+* TensorFlow Team
+* Streamlit
+* Kaggle
+* OpenCV Community
+* Google Colab
+* GitHub
 
 for their valuable support and open-source contributions.
 
@@ -472,12 +476,8 @@ Please consider giving this repository a ⭐ on GitHub.
 
 ---
 
-<p align="center">
-
 ## 🦴 Osteoporosis Detection Using Deep Learning
 
 **Artificial Intelligence for Early Bone Disease Screening**
 
 Developed with ❤️ by Team MMANTC
-
-</p>
