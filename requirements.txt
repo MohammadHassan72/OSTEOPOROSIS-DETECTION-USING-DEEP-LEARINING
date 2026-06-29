@@ -11,7 +11,10 @@ An interactive web application built with Streamlit and TensorFlow that leverage
 
 ## 🛠️ Project Structure
 ```text
-├── app.py                 # Main Streamlit application source code
-├── requirements.txt       # Project dependencies for local and cloud deployment
-├── README.md              # Project documentation
-└── models/                # Directory containing trained model files (e.g., .h5 or .keras)
+├── app.py                     # Main Streamlit application source code
+├── requirements.txt           # Project dependencies for local and cloud deployment
+├── README.md                  # Project documentation
+├── osteoporosis_model.h5      # Trained TensorFlow/Keras deep learning model
+├── osteoporosis_2_0.ipynb     # Jupyter Notebook used for model training/experimentation
+├── Report_Guest - 1.pdf       # Project Report / Documentation PDF 1
+└── Report_Guest - 2.pdf       # Project Report / Documentation PDF 2
