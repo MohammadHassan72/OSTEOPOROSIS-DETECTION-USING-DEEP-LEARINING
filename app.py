@@ -32,7 +32,7 @@ CLASS_NAMES = ['normal', 'osteoporosis']
 # =========================
 @st.cache_resource
 def load_trained_model():
-    m = load_model('osteoporosis_model.h5')
+    m = load_model('osteoporosis_model.h5' , compile=False)
 
     # Warmup
     dummy = np.zeros((1, IMAGE_SIZE, IMAGE_SIZE, 3))
